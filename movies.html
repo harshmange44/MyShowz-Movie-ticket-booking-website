@@ -1,4 +1,3 @@
-
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -11,7 +10,7 @@ Author URL: http://w3layouts.com
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>ProShowz a Entertainment Category Bootstrap Responsive Website Template | movies
-	:: W3layouts</title>
+		:: W3layouts</title>
 	<!-- Template CSS -->
 	<link rel="stylesheet" href="assets/css/style-starter.css">
 	<!-- Template CSS -->
@@ -98,9 +97,10 @@ Author URL: http://w3layouts.com
 						<!-- /search popup -->
 						<!--/search-right-->
 					</div>
-					<div class="Login_SignUp" id="login" style="font-size: 2rem ; display: inline-block; position: relative;">
+					<div class="Login_SignUp" id="login"
+						style="font-size: 2rem ; display: inline-block; position: relative;">
 						<!-- <li class="nav-item"> -->
-							<a class="nav-link" href="sign_in.html"><i class="fa fa-user-circle-o"></i></a>
+						<a class="nav-link" href="sign_in.html"><i class="fa fa-user-circle-o"></i></a>
 						<!-- </li> -->
 					</div>
 
@@ -361,10 +361,10 @@ Author URL: http://w3layouts.com
 				<div class="w3l-populohny-grids">
 					<div class="item vhny-grid">
 						<div class="box16 mb-0">
-							<a href="#">
-								<figure>
-									<img class="img-fluid" src="assets/images/m1.jpg" alt="">
-								</figure>
+							<figure>
+								<img class="img-fluid" src="assets/images/m1.jpg" alt="">
+							</figure>
+							<a href="#myModal" data-toggle="modal">
 								<div class="box-content">
 									<h3 class="title">Rocketman</h3>
 									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 1 Hr 4min
@@ -374,10 +374,56 @@ Author URL: http://w3layouts.com
 										<span class="post fa fa-heart text-right"></span>
 									</h4>
 								</div>
-								<span class="fa fa-play video-icon" aria-hidden="true"></span>
 							</a>
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content" id="mymodalcontent">
+										<div class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">EVENT DETAILS</h4>
+											<button type="button" class="closebtn" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body" id="dynamic-content">
+											<img src="assets/images/m1.jpg" class="img-fluid modalimg" alt="" />
+											<p>
+												<h3>Date &nbsp;: 12-06-2000</h3>
+												<h3>Venue&nbsp;:Cg Road </h3>
+												<h3>Time&nbsp;:16:30 </h3>
+											</p>
+											<h4>About Movie</h4>
+											<p>
+												Rocketman is a 2019 biographical musical film based on the life of
+												British musician Elton John. Directed by Dexter Fletcher and written by
+												Lee Hall, it stars Taron Egerton as Elton John, with Jamie Bell as
+												Bernie Taupin, Richard Madden as John Reid, and Bryce Dallas Howard as
+												Sheila Eileen, John's mother. The film follows John in his early days in
+												England as a prodigy at the Royal Academy of Music through his musical
+												partnership with Taupin, and is titled after John's 1972 song "Rocket
+												Man".
+											</p>
+											<h4>Star Cast</h4>
+											<p>
+												Taron Egerton as Elton John<br />
+												Jamie Bell as Bernie Taupin<br />
+												Richard Madden as John Reid<br />
+												Bryce Dallas Howard as Sheila Dwight<br />
+												Gemma Jones as Ivy, Elton's grandmother
+											</p>
+										</div>
+										<div class="bookbtn">
+											<button type="button" class="btn btn-success">Book</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal end -->
+
 						</div>
 					</div>
+
 					<div class="item vhny-grid">
 						<div class="box16 mb-0">
 							<a href="#">
@@ -447,7 +493,7 @@ Author URL: http://w3layouts.com
 				<div class="w3l-populohny-grids">
 					<div class="item vhny-grid">
 						<div class="box16 mb-0">
-						<a href="#">
+							<a href="#">
 								<figure>
 									<img class="img-fluid" src="assets/images/m11.jpg" alt="">
 								</figure>
