@@ -1,0 +1,154 @@
+* { 
+	margin: 0; 
+	padding: 0
+} 
+
+html { 
+	
+	height: 100%
+} 
+
+h2{ 
+	color: #df0e62; 
+	font-size: 1.7rem;
+	margin-bottom: 20px;
+} 
+
+/* custom css */
+
+#progress-container-id{
+	width: 100%;
+}
+#form { 
+	text-align: center; 
+	position: relative; 
+	margin-top: 20px
+} 
+
+#form fieldset { 
+	background: white; 
+	border: 0 none; 
+	border-radius: 0.5rem; 
+	box-sizing: border-box; 
+	width: 100%; 
+	margin: 0; 
+	padding-bottom: 20px; 
+	position: relative
+} 
+
+.finish { 
+	text-align: center
+} 
+
+#form fieldset:not(:first-of-type) { 
+	display: none
+} 
+
+#form .previous-step, .next-step { 
+	width: 100px; 
+	font-weight: bold; 
+	color: white; 
+	border: 0 none; 
+	border-radius: 0px; 
+	cursor: pointer; 
+	font-size: 0.8rem;
+	padding: 10px 5px; 
+	margin: 10px 5px 10px 0px; 
+	float: right;
+	border-radius: 12px;
+} 
+
+.form, .previous-step { 
+	background: #616161; 
+} 
+
+.form, .next-step { 
+	background: #df0e62; 
+} 
+
+#form .previous-step:hover, 
+#form .previous-step:focus { 
+	background-color: #000000
+} 
+
+#form .next-step:hover, 
+#form .next-step:focus { 
+	background-color: #df0e62
+} 
+
+.text { 
+	color: #df0e62; 
+	font-weight: normal
+} 
+
+#progressbar { 
+	margin-bottom: 15px; 
+	overflow: hidden; 
+	color: lightgrey 
+} 
+
+#progressbar .active { 
+	color: #df0e62
+} 
+
+#progressbar li { 
+	list-style-type: none; 
+	font-size: 15px; 
+	width: 25%; 
+	float: left; 
+	position: relative; 
+	font-weight: 400
+} 
+
+#progressbar #step1:before { 
+	content: "1"
+} 
+
+#progressbar #step2:before { 
+	content: "2"
+} 
+
+#progressbar #step3:before { 
+	content: "3"
+} 
+
+#progressbar #step4:before { 
+	content: "4"
+} 
+
+#progressbar li:before { 
+	width: 50px; 
+	height: 50px; 
+	line-height: 45px; 
+	display: block; 
+	font-size: 20px; 
+	color: #ffffff; 
+	background: lightgray; 
+	border-radius: 50%; 
+	margin: 0 auto 10px auto; 
+	padding: 2px
+} 
+
+#progressbar li:after { 
+	content: ''; 
+	width: 100%; 
+	height: 2px; 
+	background: lightgray; 
+	position: absolute; 
+	left: 0; 
+	top: 25px; 
+	z-index: -1
+} 
+
+#progressbar li.active:before, 
+#progressbar li.active:after { 
+	background: #df0e62
+} 
+
+.progress { 
+	height: 20px
+} 
+
+.progress-bar { 
+	background-color: #df0e62
+}
