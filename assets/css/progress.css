@@ -87,6 +87,7 @@ padding-top: 5%;
     /* padding: 10px; */
     margin-bottom: 10px;
     text-align: left;
+    color: var(--theme-title);
     /* float: left; */
 }
 .screen-time {
@@ -94,7 +95,7 @@ padding-top: 5%;
   border: none;
   color: black;
   padding: 10px 22px;
-  border: 1px solid #555555;
+  border: 1px solid var(--theme-screen-time-border);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -118,6 +119,10 @@ li.time-li{
 button:focus{
   background-color: #df0e62;
   color: white;
+}
+
+.flickity-viewport{
+  background-color: var(--theme-bg);
 }
 /* .screen-time{
   background-color: rgb(243, 235, 235);

@@ -18,16 +18,83 @@
 </head>
 
 <body>
+  <header id="site-header" class="w3l-header fixed-top">
+		<!--/nav-->
+		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+			<div class="container">
+				<h1><a class="navbar-brand" href="index.html"><span class="fa fa-play icon-log"
+							aria-hidden="true"></span>
+						ProShowz </a></h1>
+				<!-- if logo is image enable this   
+						<a class="navbar-brand" href="#index.html">
+							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+						</a> -->
+				<!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					<span class="fa icon-expand fa-bars"></span>
+					<span class="fa icon-close fa-times"></span>
+				 </button> -->
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					</div>
+					<!-- <ul class="navbar-nav ml-auto"> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="movies.html">Movies</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+
+						<li class="nav-item active">
+							<a class="nav-link" href="Contact_Us.html">Contact</a>
+						</li>
+					</ul>
+
+					<!--/search-right-->
+					<!--/search-right-->
+					
+
+					<div class="Login_SignUp" id="login_s">
+						<!-- style="font-size: 2rem ; display: inline-block; position: relative;" -->
+						<!-- <li class="nav-item"> -->
+						<a class="nav-link" href="sign_in.html"><i class="fa fa-user-circle-o"></i></a>
+						<!-- </li> -->
+					</div>
+				<!-- toggle switch for light and dark theme -->
+				<div class="mobile-position">
+					<nav class="navigation">
+						<div class="theme-switch-wrapper">
+							<label class="theme-switch" for="checkbox">
+								<input type="checkbox" id="checkbox">
+								<div class="mode-container">
+									<i class="gg-sun"></i>
+									<i class="gg-moon"></i>
+								</div>
+							</label>
+						</div>
+					</nav>
+				</div>
+				<!-- //toggle switch for light and dark theme -->
+			</div>
+		</nav>
+		<!--//nav-->
+	</header>
+
   <div class="container" id="progress-container-id">
     <div class="row">
       <div class="col">
         <div class="px-0 pt-4 pb-0 mt-3 mb-3">
           <form id="form">
-            <ul id="progressbar">
+            <ul id="progressbar" class="progressbar-class">
               <li class="active" id="step1">Show timing selection</li>
-              <li id="step2">Seat Selection</li>
-              <li id="step3">Payment</li>
-              <li id="step4">View e-Ticket</li>
+              <li id="step2" class="not_active">Seat Selection</li>
+              <li id="step3" class="not_active">Payment</li>
+              <li id="step4" class="not_active">View e-Ticket</li>
             </ul>
             <br>
             <fieldset>
@@ -153,18 +220,20 @@
                 </li>
 
               </ul>
-              <input type="button" name="next-step" class="next-step" value="Next Step" />
+              <input type="button" name="next-step" class="next-step" value="Continue Booking" />
             </fieldset>
             <fieldset>
               <!-- Seat selection -->
+                              <!-- rgba(0, 0, 0, 0.2), (0, 0, 0, 0.19) -->
+
               <div>
                 <iframe
-                  style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 800px; height: 550px; display: block; margin-left: auto; margin-right: auto;"
+                  style="  box-shadow: 0 14px 12px 0 var(--theme-border), 0 10px 50px 0 var(--theme-border); width: 800px; height: 550px; display: block; margin-left: auto; margin-right: auto;"
                   src="seat_selection/seat_sel.html"></iframe>
               </div>
               <br>
-              <input type="button" name="next-step" class="next-step" value="Next Step" />
-              <input type="button" name="previous-step" class="previous-step" value="Previous Step" />
+              <input type="button" name="next-step" class="next-step" value="Proceed to Payment" />
+              <input type="button" name="previous-step" class="previous-step" value="Back" />
             </fieldset>
             <fieldset>
               <!-- Payment Page -->
@@ -187,7 +256,7 @@
                               </div>
                               <div class="radio-input">
                                 <input type="radio" id="card" />
-                                Pay $30.00 with credit card
+                                Pay RS.200.00 with credit card
                               </div>
                             </label>
                           </div>
@@ -235,13 +304,17 @@
                         </div>
                       </div>
                     </div>
-                    <button type="submit" value="Confirm Payment" class="btn">Confirm Payment</button>
+                    <div class="text-center">
+                      <button type="submit"  class="btn btn-danger" href="#">Cancel Payment</button>
+                      <button type="submit" class=" btn btn-success" >Confirm Payment</button>
+                  </div>
+  
                   </div>
                 </div>
               </div>
 
-              <input type="button" name="next-step" class="next-step" value="Final Step" />
-              <input type="button" name="previous-step" class="previous-step" value="Previous Step" />
+              <!-- <input type="button" name="next-step" class="next-step" value="Final Step" />
+              <input type="button" name="previous-step" class="previous-step" value="Previous Step" /> -->
             </fieldset>
             <fieldset>
               <div class="finish">
@@ -270,6 +343,7 @@
 <script type="text/javascript" src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'>
 </script>
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src="assets/js/theme-change.js"></script>
 
 <script type="text/javascript" src="assets/js/ticket-booking.js"></script>
 

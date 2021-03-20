@@ -129,21 +129,22 @@ label {
 }
 
 .btn {
-  background-color: #4CAF50;
+  /* background-color: #4CAF50; */
   color: var(--theme-white);
   padding: 12px;
   margin: 10px 0;
   border: none;
-  width: 100%;
+  /* display:flex; */
+  /* width: 40px; */
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
 }
 
-.btn:hover {
+/* .btn:hover {
   background-color: #45a049;
   color: white;
-}
+} */
 
 a {
   color: #2196F3;

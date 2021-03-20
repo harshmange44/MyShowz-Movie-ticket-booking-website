@@ -6,6 +6,42 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
 /* reset */
+:root {
+	--theme-color: #21174a;
+	--theme-yellow: #fac70b;
+	--theme-rose: #df0e62;
+	--theme-title: #0c0f0a;
+	--theme-nav: #262626;
+	--theme-dark: #111;
+	--theme-lite: #f6f6f6;
+	--theme-blue: #127681;
+	--theme-para: #888;
+	--theme-white: #fff;
+	--theme-hd-bg: #fff;
+	--theme-border: #f0f0f0;
+	--theme-fm-border: #ddd;
+	--theme-progressbar: #d3d3d3;
+	--theme-screen-time-border: #555555;
+  }
+  
+  [data-theme="dark"] {
+	--theme-rose: #df0e62;
+	--theme-para: #888;
+	--theme-hd-bg: #0c0f0a;
+	--theme-dark: #111;
+	--theme-lite: #222;
+	--theme-color: #21174a;
+	--theme-yellow: #fac70b;
+	--theme-title: rgb(255, 255, 255);
+	--theme-nav: rgb(255, 255, 255);
+	--theme-white: #fff;
+	--theme-bg: #0c0f0a;
+	--theme-border: #222;
+	--theme-fm-border: #fff;
+	--theme-progressbar: rgb(255, 255, 255);
+	--theme-screen-time-border: rgb(255, 255, 255);
+  }
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0px;padding:0px;}
@@ -33,12 +69,12 @@ body{
 	padding:0;
 	margin:0;
     
-	font-family: 'Open Sans', sans-serif !important;
+	/* font-family: 'Open Sans', sans-serif !important; */
 }
 
 h1,h2,h3,h4,h5,h6{
 	margin:0;	
-font-family: 'Kotta One', serif;
+/* font-family: 'Kotta One', serif; */
 }	
 p{
 	margin:0;
@@ -67,7 +103,8 @@ label{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-    background:rgba(255, 255, 255, 0.88);
+    background: var(--theme-bg);
+	/* rgba(255, 255, 255, 0.88); */
     /* padding: 10px 10px; */
 }
 .main h2 {
@@ -118,8 +155,9 @@ p.copy_rights a:hover{
     font-size: 14px;
 	font-weight:normal;
 }
+
 div.seatCharts-cell {
-	color: #182C4E;
+	color: var(--theme-title);
     height: 29px;
     width: 29px;
     line-height: 27px;
@@ -168,6 +206,7 @@ ul.seatCharts-legendList {
 .seatCharts-legendItem{
 	margin-top: 10px;
 	line-height: 2;
+	color: var(--theme-title);
 	}
 span.seatCharts-legendDescription {
 	margin-left: 5px;
@@ -241,12 +280,16 @@ ul.book-left li {
     color: #df0e62;
     line-height: 1.9em;
 }
-ul.book-right li {
+.book-right li {
     font-size: 16px;
     font-weight: 500;
-    color: #000;
+    color: var(--theme-title);
     line-height: 1.9em;
 }
+
+/* .booking-details .book-right li{
+	color: var(--theme-bg);
+} */
 /*-- agileits --*/
 /*-- //movie ticket --*/
 
@@ -256,10 +299,11 @@ ul.book-right li {
 	.main {
 		width: 50%;
 	}
-	.content h1 {
+	.content h2 {
 		color: #df0e62;
 		font-size: 33px;
 		margin: 15px 0 15px 0;
+		text-align: center;
 	}	
 }
 @media (max-width: 1366px){

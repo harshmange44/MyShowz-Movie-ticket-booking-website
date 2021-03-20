@@ -9,7 +9,7 @@ html {
 } 
 
 h2{ 
-	color: #df0e62; 
+	color: var(--theme-rose);
 	font-size: 1.7rem;
 	margin-bottom: 20px;
 } 
@@ -26,7 +26,7 @@ h2{
 } 
 
 #form fieldset { 
-	background: white; 
+	background: var(--theme-bg); 
 	border: 0 none; 
 	border-radius: 0.5rem; 
 	box-sizing: border-box; 
@@ -45,17 +45,17 @@ h2{
 } 
 
 #form .previous-step, .next-step { 
-	width: 100px; 
+	width: min-content; 
 	font-weight: bold; 
 	color: white; 
 	border: 0 none; 
 	border-radius: 0px; 
 	cursor: pointer; 
 	font-size: 0.8rem;
-	padding: 10px 5px; 
+	padding: 10px 35px; 
 	margin: 10px 5px 10px 0px; 
 	float: right;
-	border-radius: 12px;
+	border-radius: 22px;
 } 
 
 .form, .previous-step { 
@@ -63,7 +63,9 @@ h2{
 } 
 
 .form, .next-step { 
-	background: #df0e62; 
+	margin-left: 20px;
+	margin-right: 20px;
+	background: var(--theme-rose); 
 } 
 
 #form .previous-step:hover, 
@@ -73,31 +75,31 @@ h2{
 
 #form .next-step:hover, 
 #form .next-step:focus { 
-	background-color: #df0e62
+	background-color: var(--theme-rose);
 } 
 
 .text { 
-	color: #df0e62; 
+	color: var(--theme-rose); 
 	font-weight: normal
 } 
 
 #progressbar { 
 	margin-bottom: 15px; 
 	overflow: hidden; 
-	color: lightgrey 
+	color: var(--theme-progressbar);
 } 
 
 #progressbar .active { 
-	color: #df0e62
+	color: var(--theme-rose);
 } 
 
 #progressbar li { 
-	list-style-type: none; 
+	list-style-type:none; 
 	font-size: 15px; 
 	width: 25%; 
 	float: left; 
 	position: relative; 
-	font-weight: 400
+	font-weight: 400;
 } 
 
 #progressbar #step1:before { 
@@ -122,7 +124,7 @@ h2{
 	line-height: 45px; 
 	display: block; 
 	font-size: 20px; 
-	color: #ffffff; 
+	color: #ffffff;
 	background: lightgray; 
 	border-radius: 50%; 
 	margin: 0 auto 10px auto; 
@@ -133,16 +135,16 @@ h2{
 	content: ''; 
 	width: 100%; 
 	height: 2px; 
-	background: lightgray; 
+	background: var(--theme-progressbar); 
 	position: absolute; 
 	left: 0; 
 	top: 25px; 
-	z-index: -1
+	z-index: -1;
 } 
 
 #progressbar li.active:before, 
 #progressbar li.active:after { 
-	background: #df0e62
+	background: var(--theme-rose);
 } 
 
 .progress { 
@@ -150,5 +152,12 @@ h2{
 } 
 
 .progress-bar { 
-	background-color: #df0e62
+	background-color: var(--theme-rose);
 }
+.fa-user-circle-o{
+	font-size: 2rem ;
+	display: inline-block;
+	position: relative;
+	color: var(--theme-rose);
+  }
+  
