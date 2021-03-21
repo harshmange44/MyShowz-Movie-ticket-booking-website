@@ -3,7 +3,6 @@ const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
-    
     // switchTextColor(currentTheme);
 
     if (currentTheme === 'dark') {
@@ -17,8 +16,9 @@ function switchTheme(e) {
         localStorage.setItem('theme', 'dark');
         // switchTextColor('dark');
     }
-    else {        document.documentElement.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
+    else {       
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
         //   switchTextColor('light');
     }    
 }

@@ -1,11 +1,11 @@
 /* external css: flickity.css */
 
-* { box-sizing: border-box; }
+#screen-select-div > * { box-sizing: border-box; }
 
-body { font-family: sans-serif;
+/* body { font-family: sans-serif;
   margin-left: 120px;
   margin-right: 120px;
-}
+} */
 
 .carousel {
   background: white;
@@ -116,7 +116,7 @@ li.time-li{
   display: table;
   /* display: inline-block; */
 }
-button:focus{
+.screen-time:focus{
   background-color: #df0e62;
   color: white;
 }
