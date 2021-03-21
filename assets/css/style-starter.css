@@ -14165,6 +14165,7 @@ ul {
   --theme-fm-border: #ddd;
   --theme-progressbar: #d3d3d3;
   --theme-screen-time-border: #555555;
+  --theme-bg : #fff;
 }
 
 [data-theme="dark"] {

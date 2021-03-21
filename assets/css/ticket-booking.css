@@ -160,4 +160,54 @@ h2{
 	position: relative;
 	color: var(--theme-rose);
   }
-  
+
+  .cancel-pay-btn { 
+	width: min-content; 
+	font-weight: bold; 
+	color: white; 
+	border: 0 none; 
+	border-radius: 0px; 
+	cursor: pointer; 
+	font-size: 0.8rem;
+	padding: 10px 35px; 
+	margin: 10px 5px 10px 0px; 
+	float: right;
+	border-radius: 22px;
+	background: rgb(235, 34, 34); 
+} 
+
+.pay-btn { 
+	margin-left: 20px;
+	margin-right: 20px;
+	background: rgb(58, 223, 25); 
+} 
+
+.home-page-btn { 
+	width: min-content; 
+	font-weight: bold; 
+	color: white; 
+	border: 0 none; 
+	border-radius: 0px; 
+	cursor: pointer; 
+	font-size: 0.8rem;
+	padding: 10px 35px; 
+	margin: 10px 5px 10px 0px; 
+	float: right;
+	border-radius: 22px;
+	background: #616161; 
+} 
+#form .cancel-pay-btn:hover, 
+#form .cancel-pay-btn:focus { 
+	background-color: #da0000
+} 
+
+#form .pay-btn:hover, 
+#form .pay-btn:focus { 
+	background: rgb(0, 170, 9); 
+} 
+
+#form .home-page-btn:hover, 
+#form .home-page-btn:focus { 
+	background-color: var(--theme-title);
+	color: var(--theme-bg)
+}
