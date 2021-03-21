@@ -1,6 +1,8 @@
 /* external css: flickity.css */
 
-#screen-select-div > * { box-sizing: border-box; }
+#screen-select-div>* {
+  box-sizing: border-box;
+}
 
 /* body { font-family: sans-serif;
   margin-left: 120px;
@@ -21,10 +23,11 @@
   cursor: pointer;
   /* vertical-align: middle; */
   display: inline-block;
-    /* justify-content: center;
+  /* justify-content: center;
     flex-wrap: wrap; */
   /* counter-increment: carousel-cell; */
 }
+
 /* .my-div {
   width: 100px;
   height: 80px;
@@ -56,40 +59,45 @@
   font-size: 50px;
   line-height: 80px;
 }
+
 .carousel-nav .carousel-cell:focus {
-    background: #df0e62;
-  }
-.carousel-nav .carousel-cell.is-selected{
   background: #df0e62;
 }
-.carousel-nav .carousel-cell .date-numeric{
-  font-size: 1rem;
-font-weight: 500;
-line-height: 18px;
-color: black;
-text-align: center;
-vertical-align: middle;
-padding-top: 20%;
-}
-.carousel-nav .carousel-cell .date-day{
-  color: black;
-text-transform: uppercase;
-font-size: 0.8rem;
-line-height: 14px;
-text-align: center;
-vertical-align: middle;
-justify-content: center;
-padding-top: 5%;
+
+.carousel-nav .carousel-cell.is-selected {
+  background: #df0e62;
 }
 
-.screens{
-  display: block;
-    /* padding: 10px; */
-    margin-bottom: 10px;
-    text-align: left;
-    color: var(--theme-title);
-    /* float: left; */
+.carousel-nav .carousel-cell .date-numeric {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 18px;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 20%;
 }
+
+.carousel-nav .carousel-cell .date-day {
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.screens {
+  display: block;
+  /* padding: 10px; */
+  margin-bottom: 10px;
+  text-align: left;
+  color: var(--theme-title);
+  /* float: left; */
+}
+
 .screen-time {
   background-color: rgb(243, 235, 235);
   border: none;
@@ -104,6 +112,7 @@ padding-top: 5%;
   margin-right: 20px;
   float: left;
 }
+
 /* .time-btn{
   float: left;
 } */
@@ -111,19 +120,22 @@ ul.time-ul {
   list-style-type: none;
   display: table;
 }
-li.time-li{
+
+li.time-li {
   margin-bottom: 25px;
   display: table;
   /* display: inline-block; */
 }
-.screen-time:focus{
+
+.screen-time:focus {
   background-color: #df0e62;
   color: white;
 }
 
-.flickity-viewport{
+.flickity-viewport {
   background-color: var(--theme-bg);
 }
+
 /* .screen-time{
   background-color: rgb(243, 235, 235);
   border: 1px;

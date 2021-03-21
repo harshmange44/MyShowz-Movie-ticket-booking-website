@@ -14,12 +14,16 @@
                 inactive_bg: '#F5F5F5',
                 active_border_color: '#c1c1c1',
                 active_content_border_color: '#c1c1c1',
-                activate: function () {
-                }
+                activate: function () {}
             }
             //Variables
             var options = $.extend(defaults, options);
-            var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical', accord = 'accordion';
+            var opt = options,
+                jtype = opt.type,
+                jfit = opt.fit,
+                jwidth = opt.width,
+                vtabs = 'vertical',
+                accord = 'accordion';
             var hash = window.location.hash;
             var historyApi = !!(window.history && history.replaceState);
 
@@ -53,7 +57,10 @@
                         $respTabs.addClass('resp-vtabs').addClass(options.tabidentify);
                     }
                     if (jfit == true) {
-                        $respTabs.css({ width: '100%', margin: '0px' });
+                        $respTabs.css({
+                            width: '100%',
+                            margin: '0px'
+                        });
                     }
                     if (jtype == accord) {
                         $respTabs.addClass('resp-easy-accordion').addClass(options.tabidentify);
@@ -135,7 +142,7 @@
                 }
                 //assign proper classes for when tabs mode is activated before making a selection in accordion mode
                 else {
-                   // $($respTabs.find('.resp-tab-content.' + options.tabidentify)[tabNum]).addClass('resp-accordion-closed'); //removed resp-tab-content-active
+                    // $($respTabs.find('.resp-tab-content.' + options.tabidentify)[tabNum]).addClass('resp-accordion-closed'); //removed resp-tab-content-active
                 }
 
                 //Tab Click action function
@@ -198,12 +205,10 @@
                                 var re = new RegExp(respTabsId + "[0-9]+");
                                 if (currentHash.match(re) != null) {
                                     newHash = currentHash.replace(re, newHash);
-                                }
-                                else {
+                                } else {
                                     newHash = currentHash + "|" + newHash;
                                 }
-                            }
-                            else {
+                            } else {
                                 newHash = '#' + newHash;
                             }
 
@@ -221,4 +226,3 @@
         }
     });
 })(jQuery);
-

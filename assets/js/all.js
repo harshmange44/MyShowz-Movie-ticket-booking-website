@@ -1,8 +1,19 @@
 "use strict";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+  return _typeof(obj);
+}
 
-!function (e) {
+! function (e) {
   var t = {};
 
   function n(r) {
@@ -31,13 +42,14 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     if (4 & t && "object" == _typeof(e) && e && e.__esModule) return e;
     var r = Object.create(null);
     if (n.r(r), Object.defineProperty(r, "default", {
-      enumerable: !0,
-      value: e
-    }), 2 & t && "string" != typeof e) for (var o in e) {
-      n.d(r, o, function (t) {
-        return e[t];
-      }.bind(null, o));
-    }
+        enumerable: !0,
+        value: e
+      }), 2 & t && "string" != typeof e)
+      for (var o in e) {
+        n.d(r, o, function (t) {
+          return e[t];
+        }.bind(null, o));
+      }
     return r;
   }, n.n = function (e) {
     var t = e && e.__esModule ? function () {

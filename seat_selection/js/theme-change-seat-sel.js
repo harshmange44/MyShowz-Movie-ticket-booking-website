@@ -3,7 +3,7 @@ const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
-    
+
     // switchTextColor(currentTheme);
 
     if (currentTheme === 'dark') {
@@ -16,11 +16,11 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'dark');
         // localStorage.setItem('theme', 'dark');
         // switchTextColor('dark');
-    }
-    else {        document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
         //   localStorage.setItem('theme', 'light');
         //   switchTextColor('light');
-    }    
+    }
 }
 window.addEventListener('storage', switchTheme, false);
 // function switchTextColor(currTheme){
