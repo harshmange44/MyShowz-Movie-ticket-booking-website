@@ -166,7 +166,7 @@ h2{
 	position: relative;
 	color: var(--theme-rose);
   }
-.cancel-pay-btn { 
+  .cancel-pay-btn { 
 	width: min-content; 
 	font-weight: bold; 
 	color: white; 
@@ -200,17 +200,5 @@ h2{
 	float: right;
 	border-radius: 22px;
 	background: var(--theme-rose);
-} 
-#form .cancel-pay-btn:hover, 
-#form .cancel-pay-btn:focus { 
-	background-color: #da0000
-} 
-
-#form .pay-btn:hover, 
-#form .pay-btn:focus { 
-	background: rgb(0, 170, 9); 
-} 
-
-#form .home-page-btn:hover, 
-#form .home-page-btn:focus { 
-	background-color: #c70050;
+	background: #616161; 
+}

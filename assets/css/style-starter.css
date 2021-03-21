@@ -14166,6 +14166,7 @@ ul {
   --theme-bg: #fff;
   --theme-progressbar: #d3d3d3;
   --theme-screen-time-border: #555555;
+  --theme-bg : #fff;
 }
 
 [data-theme="dark"] {
@@ -18838,7 +18839,8 @@ screen and (max-height: 300px) {
 #small-dialog2,
 #small-dialog3,
 #small-dialog4,
-#small-dialog5 {
+#small-dialog5,
+#small-dialog6 {
   max-width: 750px;
   margin: 40px auto;
   position: relative;
@@ -18849,7 +18851,9 @@ div#small-dialog1 iframe,
 div#small-dialog2 iframe,
 div#small-dialog3 iframe,
 div#small-dialog4 iframe,
-#small-dialog5 {
+div#small-dialog5 iframe,
+div#small-dialog6 iframe
+ {
   width: 100%;
   height: 400px;
   display: block;
@@ -19565,7 +19569,7 @@ button.closebtn {
 #dynamic-content p {
   margin-bottom: 20px;
   color: var(--theme-para);
-  text-align: -moz-left;
+  text-align: left;
 }
 
 .bookbtn {
