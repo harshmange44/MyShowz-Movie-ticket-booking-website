@@ -202,3 +202,18 @@ h2{
 	background: var(--theme-rose);
 	background: #616161; 
 }
+
+#form .cancel-pay-btn:hover, 
+#form .cancel-pay-btn:focus { 
+	background-color: #da0000
+} 
+
+#form .pay-btn:hover, 
+#form .pay-btn:focus { 
+	background: rgb(0, 170, 9); 
+} 
+
+#form .home-page-btn:hover, 
+#form .home-page-btn:focus { 
+	background-color: #c70050;
+}
