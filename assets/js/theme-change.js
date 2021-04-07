@@ -15,12 +15,11 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
         // switchTextColor('dark');
-    }
-    else {       
+    } else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
         //   switchTextColor('light');
-    }    
+    }
 }
 
 // function switchTextColor(currTheme){

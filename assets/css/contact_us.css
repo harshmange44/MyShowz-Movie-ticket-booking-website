@@ -1,5 +1,5 @@
 /* @import url('https://fonts-googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap'); */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -108,7 +108,7 @@ body {
 .container .row100 .inputBox input:focus+.text
 
 /* .container .row100 .inputBox input:valid + .text */
-{
+    {
     top: -35px;
     left: -10px;
 }
@@ -129,7 +129,7 @@ body {
 .container .row100 .inputBox input:focus~.line
 
 /* .container .row100 .inputBox input:valid ~ .line */
-{
+    {
     height: 100%;
     /* transition: 0.5s; */
 }
@@ -149,7 +149,7 @@ body {
 .container .row100 .inputBox textarea:focus+.text
 
 /* .container .row100 .inputBox textarea:valid + .text */
-{
+    {
     top: -35px;
     left: -10px;
 }
@@ -157,7 +157,7 @@ body {
 .container .row100 .inputBox textarea:focus~.line
 
 /* .container .row100 .inputBox textarea:valid ~ .line */
-{
+    {
     height: 100%;
 }
 

@@ -1,6 +1,7 @@
 div.seatCharts-container {
 	/*min-width: 700px;*/
 }
+
 div.seatCharts-cell {
 
 	height: 16px;
@@ -10,10 +11,11 @@ div.seatCharts-cell {
 	text-align: center;
 	outline: none;
 	font-size: 13px;
-	line-height:16px;
+	line-height: 16px;
 	color: blue;
 
 }
+
 div.seatCharts-seat {
 	color: white;
 	-webkit-border-radius: 3px;
@@ -21,9 +23,11 @@ div.seatCharts-seat {
 	border-radius: 3px;
 	cursor: default;
 }
+
 div.seatCharts-seat:focus {
 	border: none;
 }
+
 /*
 .seatCharts-seat:focus {
 	outline: none;
@@ -33,6 +37,7 @@ div.seatCharts-seat:focus {
 div.seatCharts-space {
 	background: none;
 }
+
 div.seatCharts-row {
 	height: 50px;
 }
@@ -61,6 +66,7 @@ div.seatCharts-seat.unavailable {
 ul.seatCharts-legendList {
 	list-style: none;
 }
+
 li.seatCharts-legendItem {
 	margin-top: 10px;
 	line-height: 2;

@@ -6,7 +6,7 @@
   margin-bottom: 20px;
 } */
 
-#payment_div > * {
+#payment_div>* {
   box-sizing: border-box;
 }
 
