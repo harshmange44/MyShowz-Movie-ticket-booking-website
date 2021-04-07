@@ -207,7 +207,6 @@ h2 {
 	float: right;
 	border-radius: 22px;
 	background: var(--theme-rose);
-<<<<<<< HEAD
 	background: #616161; 
 }
 
@@ -224,7 +223,4 @@ h2 {
 #form .home-page-btn:hover, 
 #form .home-page-btn:focus { 
 	background-color: #c70050;
-=======
-	background: #616161;
->>>>>>> fd96f3ca5de003fc528c849923c0e9ae3fc1774a
 }

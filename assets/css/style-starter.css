@@ -13853,6 +13853,12 @@ a.text-dark:focus {
 .fa-address-card-o:before {
   content: "";
 }
+.fa-user-circle-o {
+	font-size: 2rem;
+	display: inline-block;
+	position: relative;
+	color: var(--theme-nav);
+}
 
 .fa-user-circle:before {
   content: "";
@@ -13861,7 +13867,13 @@ a.text-dark:focus {
 .fa-user-circle-o:before {
   content: "";
 }
+.fa-user-circle-o:hover{
+	color: var(--theme-rose);
+}
 
+/* .fa-user-circle-o:active{
+	color: var(--theme-rose);
+} */
 .fa-user-o:before {
   content: "";
 }
