@@ -382,51 +382,27 @@ span.seatCharts-legendDescription {
 }
 
 ul.book-left {
-<<<<<<< HEAD
     float: left;
     width: 42%;
-=======
-	float: left;
-	width: 35%;
->>>>>>> fd96f3ca5de003fc528c849923c0e9ae3fc1774a
 }
 
 ul.book-right {
-<<<<<<< HEAD
     float: right;
     width: 35%;
-=======
-	float: right;
-	width: 63%;
->>>>>>> fd96f3ca5de003fc528c849923c0e9ae3fc1774a
 }
 
 ul.book-left li {
-<<<<<<< HEAD
     font-size: 0.9rem;
     font-weight: 600;
     color: #df0e62;
     line-height: 1.9em;
-=======
-	font-size: 16px;
-	font-weight: 600;
-	color: #df0e62;
-	line-height: 1.9em;
->>>>>>> fd96f3ca5de003fc528c849923c0e9ae3fc1774a
 }
 
 .book-right li {
-<<<<<<< HEAD
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--theme-title);
     line-height: 1.9em;
-=======
-	font-size: 16px;
-	font-weight: 500;
-	color: var(--theme-title);
-	line-height: 1.9em;
->>>>>>> fd96f3ca5de003fc528c849923c0e9ae3fc1774a
 }
 
 /* .booking-details .book-right li{
