@@ -263,7 +263,7 @@ footer a {
 	font-size: 2rem;
 	display: inline-block;
 	position: relative;
-	color: var(--theme-rose);
+	color: var(--theme-nav);
 }
 
 /* .fa-user-circle-o:hover{
