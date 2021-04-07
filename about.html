@@ -732,7 +732,10 @@ Author URL: http://w3layouts.com
 </script>
 <!-- //stats -->
 <!--/theme-change-->
-<script>
+<!--/theme-change-->
+<script src="assets/js/theme-change.js"></script>
+<!-- //theme-change-->
+<!-- <script>
 	const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 	const currentTheme = localStorage.getItem('theme');
 
@@ -743,18 +746,6 @@ Author URL: http://w3layouts.com
 
 		if (currentTheme === 'dark') {
 			toggleSwitch.checked = true;
-		}
-	}
-
-	function switchTheme(e) {
-		if (e.target.checked) {
-			document.documentElement.setAttribute('data-theme', 'dark');
-			localStorage.setItem('theme', 'dark');
-			switchTextColor('dark');
-		} else {
-			document.documentElement.setAttribute('data-theme', 'light');
-			localStorage.setItem('theme', 'light');
-			switchTextColor('light');
 		}
 	}
 
@@ -779,7 +770,7 @@ Author URL: http://w3layouts.com
 		}
 	}
 	toggleSwitch.addEventListener('change', switchTheme, false);
-</script>
+</script> -->
 <!-- //theme-change-->
 <script src="assets/js/owl.carousel.js"></script>
 <!-- script for banner slider-->
