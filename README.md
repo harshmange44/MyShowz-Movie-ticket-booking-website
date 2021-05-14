@@ -17,3 +17,7 @@ It is available in both dark & light mode.
 
 ## SignIn-SignUp page in the dark mode
 ![SignIn-SignUp page in the dark mode](./screenshots/MyShowz_sign-in_page_dark.PNG)
+
+## Credits
+
+### Bootstrap Layout: https://w3layouts.com/tag/bootstrap-templates/
