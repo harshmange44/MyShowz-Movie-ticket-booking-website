@@ -47,23 +47,6 @@
 
           <!--/search-right-->
           <!--/search-right-->
-          <div class="search-right">
-            <a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span
-                class="fa fa-search ml-3" aria-hidden="true"></span></a>
-            <!-- search popup -->
-            <div id="search" class="pop-overlay">
-              <div class="popup">
-                <form action="#" method="post" class="search-box">
-                  <input type="search" placeholder="Search your Keyword" name="search" required="required" autofocus="">
-                  <button type="submit" class="btn"><span class="fa fa-search" aria-hidden="true"></span></button>
-                </form>
-
-              </div>
-              <a class="close" href="#close">×</a>
-            </div>
-            <!-- /search popup -->
-            <!--/search-right-->
-          </div>
 
           <div class="Login_SignUp" id="login" style="font-size: 2rem ; display: inline-block; position: relative;">
             <!-- <li class="nav-item"> -->
@@ -85,10 +68,8 @@
             </div>
           </nav>
         </div>
-        <!-- //toggle switch for light and dark theme -->
       </div>
     </nav>
-    <!--//nav-->
   </header>
   <!-- Contact Us Form -->
   <div class="container">
@@ -98,35 +79,35 @@
       feel free to contact us using the form below.</p>
 
     <form name="contact-us-form" action="#" onsubmit="return validateForm()">
-      <div class="row100">
+      <div class="row100" id="fname-row100">
         <div class="col">
-          <div class="inputBox">
-            <input type="text" name="fname" />
+          <div class="inputBox" id="fname-inputBox">
+            <input type="text" name="fname" onclick="triggerAnim('fname')"/>
             <span class="text">First Name</span>
-            <span class="line"></span>
+            <span class="line" id="fname-line"></span>
           </div>
         </div>
         <div class="col">
-          <div class="inputBox">
-            <input type="text" name="lname" />
+          <div class="inputBox" id="lname-inputBox">
+            <input type="text" name="lname" onclick="triggerAnim('lname')"/>
             <span class="text">Last Name</span>
-            <span class="line"></span>
+            <span class="line" id="lname-line"></span>
           </div>
         </div>
       </div>
-      <div class="row100">
+      <div class="row100" id="email-row100">
         <div class="col">
-          <div class="inputBox">
-            <input type="email" name="email" pattern="[^ @]*@[^ @]*" />
+          <div class="inputBox" id="email-inputBox">
+            <input type="email" name="email" pattern="[^ @]*@[^ @]*" onclick="triggerAnim('email')"/>
             <span class="text">Email ID</span>
-            <span class="line"></span>
+            <span class="line" id="email-line"></span>
           </div>
         </div>
         <div class="col">
-          <div class="inputBox">
-            <input type="tel" name="m-num" />
+          <div class="inputBox" id="tel-inputBox">
+            <input type="tel" name="m-num" onclick="triggerAnim('tel')" />
             <span class="text">Mobile Number</span>
-            <span class="line"></span>
+            <span class="line" id="tel-line"></span>
           </div>
         </div>
       </div>
@@ -143,7 +124,6 @@
         <div class="col">
           <div class="submitbutton">
             <button class="btn submitbtn" type="submit">Submit</button>
-            <!-- <input type="submit" value="Submit" /> -->
           </div>
         </div>
       </div>
@@ -152,10 +132,8 @@
   <script type="text/javascript" src="assets/js/contact-us.js"></script>
   <script type="text/javascript" src="assets/js/as-alert-message.min.js"></script>
   <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <!-- Template JavaScript -->
   <!--/theme-change-->
   <script src="assets/js/theme-change.js"></script>
-  <!-- //theme-change-->
   <!-- disable body scroll which navbar is in active -->
   <script>
     $(function () {
@@ -192,7 +170,6 @@
       });
     });
   </script>
-  <!--//MENU-JS-->
   <script src="assets/js/bootstrap.min.js"></script>
 </body>
 

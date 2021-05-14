@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 
 }
-
+  
 body {
     display: flex;
     justify-content: center;
@@ -196,7 +196,14 @@ body {
     border: 2px solid var(--theme-rose);
     /*#df0e62*/
 }
-
+  /* input:not(:placeholder-shown) {
+    height: 100%;
+    background: var(--theme-rose);
+  }
+  
+  input:placeholder-shown {
+    border-color: red;
+  } */
 /* input[type = "submit"]
 {
     border: none;

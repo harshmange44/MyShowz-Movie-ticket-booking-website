@@ -1,3 +1,45 @@
+var fillInputStyle = {
+height: "100%"
+// ,
+// top: "-35px",
+// left: "-10px"
+}
+var prevEle= "";
+
+function triggerAnim(str){
+  // document.write(str);
+  if(prevEle!=""){
+    // document.write("hello");
+  var val = document.forms["contact-us-form"][prevEle].value;
+  var row;
+//Object.assign():
+
+// Object.assign(document.getElementById("fname-row100").style,fillInputStyle);
+  if(val.replace(/\s/g, "") != ""){
+    console.log(prevEle+" has values")
+    // document.write("hello");
+    if(prevEle=='lname' || prevEle=='fname'){
+      row = 'fname'
+    }else{
+      row = 'email'
+    }
+    Object.assign(document.getElementById(row+"-row100").style,fillInputStyle);
+Object.assign(document.getElementById(prevEle+"-inputBox").style,fillInputStyle);
+Object.assign(document.getElementById(prevEle+"-line").style,fillInputStyle);
+  }
+}
+prevEle = ""+str+"";
+
+    // document.forms["contact-us-form"]["fname"].style = fillInputStyle;
+    // document.write("Hello World!");
+    // document.getElementById("fname-input").background-color = "red"; //fillInputStyle;
+    // setAttribute("style","height: 100%");
+    // document.getElementsByClassName("row100").setAttribute("style","height: 100%");
+    // document.getElementById("fname-inputBox").style = fillInputStyle;
+    // document.getElementById("fname-line").style = fillInputStyle;
+  
+}
+
 function validateForm() {
   var x = document.forms["contact-us-form"]["fname"].value;
   if (x == "") {
